@@ -1,0 +1,51 @@
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Gaspar','baixa','30/04/1998',1670.60);
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Oliveira','media','10/01/1990',1330.20);
+INSERT INTO dadosusuarios VALUES(null,'Guilherme','baixa','25/05/1998',1884.80);
+INSERT INTO dadosusuarios VALUES(null,'Junior','alta','11/08/1999',1110.01);
+INSERT INTO dadosusuarios VALUES(null,'Estanislau','alta','31/12/1975',2200.00);
+INSERT INTO dadosusuarios VALUES(null,'Gustavo','media','20/02/1986',7400.00);
+INSERT INTO dadosusuarios VALUES(null,'Douglas Araujo','media','13/05/1992',5400.00);
+INSERT INTO dadosusuarios VALUES(null,'Alex','baixa','07/05/1994',400.00);
+INSERT INTO dadosusuarios VALUES(null,'Lucas','media','04/081997',2250.00);
+INSERT INTO dadosusuarios VALUES(null,'Weberton','alta','05/06/1976',8500.00);
+INSERT INTO dadosusuarios VALUES(null,'Pedro','baixa','13/04/1995',5500.00);
+INSERT INTO dadosusuarios VALUES(null,'Carlos','baixa','06/08/1986',1550.00);
+INSERT INTO dadosusuarios VALUES(null,'Matheus','alta','18/12/1996',1500.00);
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Barbosa','alta','14/02/1994',1550.00);
+INSERT INTO dadosusuarios VALUES(null,'Rafael','baixa','22/07/1997',1260.00);
+INSERT INTO dadosusuarios VALUES(null,'Jean','media','15/05/1996',6200.00);
+INSERT INTO dadosusuarios VALUES(null,'Raphaela','media','04/11/1996',6200.00);
+INSERT INTO dadosusuarios VALUES(null,'Juliana','baixa','22/04/1996',4400.00);
+
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Gaspar',1,'30/04/1998',1670.60);
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Oliveira',2,'10/01/1990',1330.20);
+INSERT INTO dadosusuarios VALUES(null,'Guilherme',2,'25/05/1998',1884.80);
+INSERT INTO dadosusuarios VALUES(null,'Junior',2,'11/08/1999',1110.01);
+INSERT INTO dadosusuarios VALUES(null,'Estanislau',2,'31/12/1975',2200.00);
+INSERT INTO dadosusuarios VALUES(null,'Gustavo',2,'20/02/1986',7400.00);
+INSERT INTO dadosusuarios VALUES(null,'Douglas Araujo',2,'13/05/1992',5400.00);
+INSERT INTO dadosusuarios VALUES(null,'Alex',2,'07/05/1994',400.00);
+INSERT INTO dadosusuarios VALUES(null,'Lucas',2,'04/081997',2250.00);
+INSERT INTO dadosusuarios VALUES(null,'Weberton',2,'05/06/1976',8500.00);
+INSERT INTO dadosusuarios VALUES(null,'Pedro',2,'13/04/1995',5500.00);
+INSERT INTO dadosusuarios VALUES(null,'Carlos',2,'06/08/1986',1550.00);
+INSERT INTO dadosusuarios VALUES(null,'Matheus',1,'18/12/1996',1500.00);
+INSERT INTO dadosusuarios VALUES(null,'Gabriel Barbosa',1,'14/02/1994',1550.00);
+INSERT INTO dadosusuarios VALUES(null,'Rafael',2,'22/07/1997',1260.00);
+INSERT INTO dadosusuarios VALUES(null,'Jean',2,'15/05/1996',6200.00);
+INSERT INTO dadosusuarios VALUES(null,'Raphaela',2,'04/11/1996',6200.00);
+INSERT INTO dadosusuarios VALUES(null,'Juliana',2,'22/04/1996',4400.00);
+
+ALTER TABLE dadosusuarios
+DROP COLUMN categoria_id;
+
+ALTER TABLE dadosusuarios
+ADD COLUMN categoria_id varchar(20)not null AFTER nome;
+
+
+Conectar ao banco via CMD
+
+cd \xampp\mysql\bin - procurar a pasta xampp
+mysql -h localhost -u root - listar o host e o usuario para logar
+
+pronto, pode começar a criar, listar, atualizar bancos e tabelas...

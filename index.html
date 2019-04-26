@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tela Login</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+    html,body{
+      height: 100%;
+    }
+    html{
+        display: table;
+        margin: auto;
+    }
+    body{
+        display: table-cell;
+        vertical-align: middle;
+
+    }
+    .margin{
+        margin: 0 !important;      
+    }
+
+
+    </style>
+</head>
+<body class="">
+
+    <div class="container">
+     <div class="row">
+      <div class=" col s12 m8 offset-m2">
+       <form class="login-form" action="valida.php" method="POST">
+         <div class="card">
+           <div class="card-image">
+               <img src="img/login-image.jpg">
+               <span class="card-title">
+                <h2>Login</h2>
+                <h6>Faça seu login</h6>
+            </span>
+           </div>
+            <div class="card-content">
+                <div class="imput-field">
+                    <label for="login">Nome</label>
+                    <input class="validate" id="nome" type="text" name="nome" required />                
+                  </div>
+
+              <!--<div class="imput-field">
+                <label for="login">Email</label>
+                <input class="validate" id="login" type="email" name="login" required />                
+              </div>-->
+              
+              <div class="row">
+                  <div class="col s12 m8 l9">
+                    <div class="imput-field">
+                      <label for="senha">Senha</label>  
+                      <input id="senha" type="password" name="senha" required />                         
+                  </div>
+                </div>
+               <div class="col s12 m4 l3">
+                <div class="imput-field">
+                  <input type="checkbox" id="remember-me" />
+                  <label for="remember-me">Lembrar</label>
+                </div>
+               </div>
+              </div>
+            </div>
+            <div class="card-action blue darken-1 lighten-3">
+               <div class="center-align">
+                 <input type="submit" value="Login" class="btn blue darken-1"><!--<i class="material-icons left">vpn_key</i>-->
+               </div> 
+            </div>
+         </div>
+       </form>
+        <div class="row">
+         <div class="col s4">
+           <a href="#">Registrar</a>
+         </div>
+          <div class="col s8 right-align">
+                <a href="#">Esqueci a senha</a>
+          </div>
+        </div>
+      </div>
+     </div>
+   
+    </div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+</body>
+</html>
